@@ -74,20 +74,20 @@ namespace c__lectures
             //•	Elements in array are: 1 1 2 3 4 5 6 7 8 9
 
             Console.WriteLine("Input 10 elements in the array :");
-            string[] num = new string[10];
+            string[] num11 = new string[10];
 
             // Input 10 numbers
             for (int i = 0; i < 10; i++)
             {
                 Console.Write($"Element {i + 1}: ");
-                num[i] = Console.ReadLine(); // Convert string to int
+                num11[i] = Console.ReadLine(); // Convert string to int
             }
 
             // Output the array
             Console.WriteLine("The elements in the array are:");
             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine("element"+ i + num[i]);
+                Console.WriteLine("element"+ i + num11[i]);
             }
 
 
