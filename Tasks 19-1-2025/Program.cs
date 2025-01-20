@@ -173,10 +173,19 @@ namespace Tasks_19_1_2025
             int numm1, numm2;
             Console.WriteLine("Enter your 1st number : ");
             string StrNumm1 = Console.ReadLine();
-            string StrNumm2= Console.ReadLine();
-
+            Console.WriteLine("Enter your 2ed number : ");
+            string StrNumm2 = Console.ReadLine();
             numm1 = Convert.ToInt32(StrNumm1);
             numm2 = Convert.ToInt32(StrNumm2);
+
+            if (numm1 > numm2)
+            {
+                Console.WriteLine("Smaller Number: " + numm2);
+            }
+            else if (numm1 < numm2)
+            {
+                Console.WriteLine("Smaller Number: " + numm1);
+            }
 
 
 
@@ -185,7 +194,7 @@ namespace Tasks_19_1_2025
             //Use this method in a program to convert and display the result.
             //Input: 15 km / h
             //Output: "9.320568 mph"
-            
+
             //Converter(15);
             Console.WriteLine(Converter(15)+ "mph");
 
@@ -201,13 +210,17 @@ namespace Tasks_19_1_2025
 
 
             //**************** Task 10 *************
-
+            Console.WriteLine("enter the number to be reversed : ");
             string revNum = Console.ReadLine();
-            for (int i = revNum.Length; i < revNum.Length; --i)
-            {
-                Console.Write("reserved number is :" + revNum[i]);
+            int convRevnum = Convert.ToInt32(revNum);
+            int ones = convRevnum / 100;
+            int tens = convRevnum % 100;
+            tens = tens / 10;
+            int hands = convRevnum % 10;
+            Console.WriteLine("The number reversed to be : " + hands + tens + ones);
 
-            }
+
+
 
 
             // ************* Task 11 *****************
