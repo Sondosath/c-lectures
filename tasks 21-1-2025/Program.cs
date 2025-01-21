@@ -14,6 +14,7 @@ namespace tasks_21_1_2025
             public string name { get; set; }
             public int age { get; set; }
             public int StudentID { get; set; }
+     
             public string Email { get; set; }
             private const int MinAge = 18;
             private const int MaxAge = 40;
@@ -25,13 +26,22 @@ namespace tasks_21_1_2025
             public student(string name, int age, int studentID)
             {
                 this.name = name;
-                this.age = age;
+                if (age < MinAge || age > MaxAge)
+                {
+                    Console.WriteLine("age not allowed ");
+                }
+                else
+                {
+                    this.age = age;
+                }
+               
                 StudentID = studentID;
                
             }
             public student() {
                 name = " ";
                 age = 18;
+
                 StudentID = 1;
 
             }
