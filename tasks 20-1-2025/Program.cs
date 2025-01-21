@@ -74,6 +74,7 @@ namespace tasks_20_1_2025
                 if (isPrime)
                 {
                     Console.WriteLine(i);
+
                 }
             }
         }
