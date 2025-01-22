@@ -91,7 +91,7 @@ namespace tasks_21_1_2025
             student Sondos = new student("Sondos",24,132955);
             Sondos.GetDetails();
             student Sarah = new student("Sarah",23,101010);
-            Sondos.GetDetails();
+            Sarah.GetDetails();
 
 
         }
