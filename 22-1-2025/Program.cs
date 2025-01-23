@@ -33,7 +33,13 @@ namespace _22_1_2025
             static void Main(string[] args)
             {
             Vehicle v = new Vehicle();
+            v.Brand = "BMW";
+            v.Model = "1999";
             Car c = new Car();
+            c.Brand = "BYD";
+            c.Model = "2025";
+            v.Start();
+            c.Start();
             }
     }
 }
